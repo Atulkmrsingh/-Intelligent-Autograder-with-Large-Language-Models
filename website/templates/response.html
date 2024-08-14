@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Validation System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 2px solid #ddd;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        strong {
+            font-weight: bold;
+        }
+        .question {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+        .answer {
+            background-color: #e8f5e9;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #b9e6b2;
+            margin-bottom: 15px;
+        }
+        .response {
+            background-color: #fff3e0;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ffcc80;
+            margin-bottom: 15px;
+        }
+        .evidence {
+            background-color: #cbc9e6;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #a1a1ae;
+            margin-bottom: 15px;
+        }
+
+        
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Response</h1>
+        <div class="question">
+            <p><strong>Question:</strong> {{ question }}</p>
+        </div>
+        <div class="answer">
+            <p><strong>Answer:</strong> {{ answer }}</p>
+        </div>
+        <div class="evidence">
+            <p><strong>Evidence:</strong> {{ top_sentences }}</p>
+        </div>
+        <div class="response">
+            <p><strong>Response:</strong> {{ response }}</p>
+        </div>
+        <a href="/">Go to Home Page</a>
+    </div>
+</body>
+</html>
